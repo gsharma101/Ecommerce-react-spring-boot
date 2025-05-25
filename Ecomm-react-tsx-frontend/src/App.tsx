@@ -1,10 +1,16 @@
+import { ThemeProvider } from "@emotion/react"
+import customeTheme from "./Theme/customeTheme"
+import Navbar from "./customer/components/Navbar/Navbar"
+import { Home } from "@mui/icons-material"
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <ThemeProvider theme={customeTheme}>
+      <div>
+        <Navbar />
+        <Home />
+      </div>
+    </ThemeProvider>
   )
 }
 

@@ -1,0 +1,14 @@
+.logo{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.category{
+    font-weight: 400;
+}
+
+
+.blur-bg {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+  }
