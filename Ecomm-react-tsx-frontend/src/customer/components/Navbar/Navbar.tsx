@@ -34,9 +34,9 @@ export default function Navbar() {
           <div className="flex items-center gap-9">
             <div className="flex items-center gap-2">
               <div className='flex gap-1 lg:gap-6 items-center'>
-                <IconButton>
+                {!isLarge && <IconButton>
                   <MenuIcon />
-                </IconButton>
+                </IconButton>}
                 <h1 className='logo cursor-pointer text-lg md:text-2xl  text-[#00927c]'>
                   Shopzy
                 </h1>
