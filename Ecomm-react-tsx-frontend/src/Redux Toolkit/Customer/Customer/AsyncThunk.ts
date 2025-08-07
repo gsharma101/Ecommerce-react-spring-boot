@@ -1,7 +1,7 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { HomeCategory, HomeData } from '../../../types/homeDataTypes';
 import { api } from '../../../Config/Api';
+import type { HomeCategory, HomeData } from '../../../types/homeDataTypes';
 
 // Async thunk to fetch home page data with try-catch for error handling
 export const fetchHomePageData = createAsyncThunk<HomeData>(

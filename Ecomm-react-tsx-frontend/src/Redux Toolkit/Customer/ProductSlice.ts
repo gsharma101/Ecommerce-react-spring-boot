@@ -1,8 +1,8 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { Product } from "../../types/productTypes";
-import { RootState } from "../Store";
 import { api } from "../../Config/Api";
+import type { Product } from "../../types/productTypes";
+import type { RootState } from "../Store";
 
 // Define the base URL for the API
 const API_URL = "/products";

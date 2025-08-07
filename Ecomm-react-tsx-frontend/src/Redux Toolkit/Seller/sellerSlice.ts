@@ -1,8 +1,9 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { RootState } from "../Store";
-import { Seller, SellerReport } from "../../types/sellerTypes";
 import { api } from "../../Config/Api";
+import type { Seller, SellerReport } from "../../types/sellerTypes";
+import type { RootState } from "../Store";
 
 // Define the initial state type
 interface SellerState {

@@ -2,9 +2,9 @@ import {
   configureStore,
   combineReducers,
 } from "@reduxjs/toolkit";
+import { useDispatch, useSelector, type TypedUseSelectorHook } from "react-redux";
 
-import { thunk } from "redux-thunk";
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+// Customer slices
 import sellerSlice from "./Seller/sellerSlice";
 import sellerAuthenticationSlice from "./Seller/sellerAuthenticationSlice";
 import sellerProductSlice from "./Seller/sellerProductSlice";
@@ -27,7 +27,6 @@ import DealSlice from "./Admin/DealSlice";
 import AdminSlice from "./Admin/AdminSlice";
 
 const rootReducer = combineReducers({
-  
   // customer
   auth: AuthSlice,
   user: UserSlice,
@@ -38,7 +37,7 @@ const rootReducer = combineReducers({
   review: ReviewSlice,
   wishlist: WishlistSlice,
   aiChatBot: AiChatBotSlice,
-  homePage:CustomerSlice,
+  homePage: CustomerSlice,
 
   // seller
   sellers: sellerSlice,
@@ -50,16 +49,16 @@ const rootReducer = combineReducers({
   revenueChart: revenueChartSlice,
 
   // admin
-  adminCoupon:AdminCouponSlice,
-  adminDeals:DealSlice,
-  admin:AdminSlice,
-  deal:DealSlice
+  adminCoupon: AdminCouponSlice,
+  adminDeals: DealSlice,
+  admin: AdminSlice,
 });
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
+  // No need to define middleware unless you're adding custom ones
 });
+
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof rootReducer>;
 

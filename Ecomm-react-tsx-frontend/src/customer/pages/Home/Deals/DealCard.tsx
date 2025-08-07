@@ -1,4 +1,5 @@
-import { Deal } from '../../../../types/dealTypes'
+import React from 'react'
+import type { Deal } from '../../../../types/dealTypes'
 import { useNavigate } from 'react-router-dom'
 
 const DealCard = ({deal}:{deal:Deal}) => {

@@ -1,6 +1,6 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { Cart } from "../../types/cartTypes";
-import { Coupon, CouponState } from "../../types/couponTypes";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
+import type { Coupon, CouponState } from "../../types/couponTypes";
 import { api } from "../../Config/Api";
 
 const API_URL = "/api/coupons";

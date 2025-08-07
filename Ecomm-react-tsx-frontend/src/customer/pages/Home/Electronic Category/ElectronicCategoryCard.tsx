@@ -1,7 +1,8 @@
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-const ElectronicCategoryCard = () => {
+const ElectronicCategoryCard = ({item}:any) => {
   const navigate=useNavigate();
 
   return (

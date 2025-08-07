@@ -1,6 +1,6 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
 import { api } from '../../Config/Api';
-import { Seller } from '../../types/sellerTypes';
+import type { Seller } from '../../types/sellerTypes';
 import axios from 'axios';
 
 // Define initial state

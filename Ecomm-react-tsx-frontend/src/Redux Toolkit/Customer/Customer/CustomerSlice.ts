@@ -1,7 +1,7 @@
 // homeSlice.ts
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import { createHomeCategories, fetchHomePageData } from './AsyncThunk';
-import { HomeCategory, HomeData } from '../../../types/homeDataTypes';
+import type { HomeCategory, HomeData } from '../../../types/homeDataTypes';
 
 interface HomeState {
   homePageData: HomeData | null;

@@ -1,12 +1,10 @@
 // src/slices/cartSlice.ts
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { Cart, CartItem } from "../../types/cartTypes";
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import { api } from "../../Config/Api";
-import { RootState } from "../Store";
-import { ApiResponse } from "../../types/authTypes";
+import type { Cart, CartItem } from "../../types/cartTypes";
+import type { RootState } from "../Store";
 import { applyCoupon } from "./CouponSlice";
 import { sumCartItemMrpPrice, sumCartItemSellingPrice } from "../../util/cartCalculator";
-import { stat } from "fs";
 
 interface CartState {
   cart: Cart | null;

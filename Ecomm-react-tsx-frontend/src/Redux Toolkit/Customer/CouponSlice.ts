@@ -1,8 +1,8 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-import { Cart } from "../../types/cartTypes";
-import { Coupon, CouponState } from "../../types/couponTypes";
 import { api } from "../../Config/Api";
+import type { Cart } from "../../types/cartTypes";
+import type { Coupon, CouponState } from "../../types/couponTypes";
 
 const API_URL = "/api/coupons";
 

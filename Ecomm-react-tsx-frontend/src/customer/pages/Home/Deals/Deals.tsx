@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DealCard from "./DealCard";
 import { useAppSelector } from "../../../../Redux Toolkit/Store";
-import { Deal } from "../../../../types/dealTypes";
+import type { Deal } from "../../../../types/dealTypes";
 
 export default function DealSlider() {
     const {homePage}=useAppSelector(store=>store)

@@ -1,6 +1,6 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { Wishlist, WishlistState } from "../../types/wishlistTypes";
+import { createSlice, createAsyncThunk, type PayloadAction } from "@reduxjs/toolkit";
 import { api } from "../../Config/Api";
+import type { Wishlist, WishlistState } from "../../types/wishlistTypes";
 
 const initialState: WishlistState = {
   wishlist: null,

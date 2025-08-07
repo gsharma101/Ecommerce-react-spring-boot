@@ -1,7 +1,8 @@
 // src/slices/authSlice.ts
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
-import {
+import { api } from '../../Config/Api';
+import type {
     AuthResponse,
     LoginRequest,
     SignupRequest,
@@ -9,8 +10,7 @@ import {
     ApiResponse,
     AuthState,
 } from '../../types/authTypes';
-import { api } from '../../Config/Api';
-import { RootState } from '../Store';
+import type { RootState } from '../Store';
 import { resetUserState } from './UserSlice';
 import { resetCartState } from './CartSlice';
 
