@@ -212,20 +212,11 @@ mvn package
 
 ## 📸 Screenshots
 
-Place images under `docs/screenshots/` and reference here:
+### Homepage
+![Homepage](assets/images/homepage.png)
 
-```
-docs/
-└─ screenshots/
-   ├─ home.png
-   ├─ product-detail.png
-   └─ seller-dashboard.png
-```
-
-```md
-![Home](docs/screenshots/home.png)
-![Seller Dashboard](docs/screenshots/seller-dashboard.png)
-```
+### Login Page
+![Login](assets/images/login.png):
 
 ---
 
